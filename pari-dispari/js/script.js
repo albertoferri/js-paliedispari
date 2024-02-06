@@ -41,7 +41,7 @@ document.getElementById("start").addEventListener("click",
 
         // setto la variabile risposta vuota per poi inserire il testo in base alla vincita
         let risposta = "";
-        if (risultato === sceltaUtenteInput && numeroUtenteInput >= 1 && numeroUtenteInput <= 5) {
+        if (risultato === sceltaUtenteInput) {
         risposta = "Hai vinto! Il risultato è " + risultato + ". <br> Il tuo numero: " + numeroUtenteInput + " <br> Il numero del computer: " + numeroComputer + " <br> La somma: " + somma;
         } else {
         risposta = "Hai perso! Il risultato è " + risultato + ". <br> Il tuo numero: " + numeroUtenteInput + " <br> Il numero del computer: " + numeroComputer + " <br> La somma: " + somma;
