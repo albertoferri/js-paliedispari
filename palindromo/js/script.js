@@ -7,3 +7,29 @@
 
 // Chiedi all'utente di inserire una parola
 let userInput = prompt("Inserisci una parola:");
+
+
+// Creare una funzione per capire se la parola inserita è palindroma
+function isPalindrome(parola) {
+    // Ottieni la lunghezza della parola
+    let char = parola.length;
+
+    // divido la parola in metà per capire se è palindroma
+    for (let i = 0; i < char / 2; i++) {
+        
+        // l'istruzione "lenght - 1 - i" serve per confrontare il carattere corrente con quello simmetrico nella seconda metà della parola
+        if (parola[i] !== parola[char - 1 - i]) {
+            // Se sono diversi, la parola non è palindroma
+            return false;
+        }
+    }
+    // Se il ciclo è terminato senza dare errore (=true), la parola è palindroma
+    return true;
+}
+
+// Verifica se la parola inserita è palindroma in console
+if (isPalindrome(userInput)) {
+    console.log("La parola inserita è palindroma.");
+} else {
+    console.log("La parola inserita non è palindroma.");
+}
