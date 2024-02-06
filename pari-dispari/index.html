@@ -10,13 +10,26 @@
 </head>
 <body>
 
-    <div class="container mt-5">
-        <label>Scegli pari o dispari:</label>
-        <input type="text" id="sceltaUtenteInput"><br>
-        <label>Inserisci un numero da 1 a 5:</label>
-        <input type="number" id="numeroUtenteInput" min="1" max="5"><br>
-        <button type="submit" class="btn btn-outline-dark" id="start">GIOCA</button>
-        <p id="risultato"></p>
+    <div class="container mt-5 text-center">
+        <h1></h1>
+        <div class="row py-4 gap-4">
+            <div class="col-3 border border-2 border-warning rounded-3 p-3 shadow ">
+                <label>Scegli pari o dispari:</label>
+                <input type="text" id="sceltaUtenteInput"><br>
+            </div>
+            <div class="col-3 border border-2 border-warning rounded-3 p-3 shadow">
+                <label>Inserisci un numero da 1 a 5:</label>
+                <input type="number" id="numeroUtenteInput" min="1" max="5"><br>
+            </div>
+            <div class="col-5 d-flex justify-content-center  align-items-center ">
+                <button type="submit" class="btn btn-outline-dark shadow" id="start">GIOCA</button>
+            </div>
+        </div>
+        <div class="row text-start">
+            <div class="col">
+                <p id="risultato"></p>
+            </div>
+        </div>
     </div>
 
 

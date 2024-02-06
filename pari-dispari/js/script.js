@@ -11,7 +11,6 @@ function randomNumber() {
     return Math.floor(Math.random() * 5) + 1;
 }
 
-
 // inposto funzione per capire se un numero è pari o dispari
 function pariODispari(numero) {
     if (numero % 2 == 0) {
@@ -51,3 +50,5 @@ document.getElementById("start").addEventListener("click",
         document.getElementById("risultato").innerHTML = risposta;
     }
 );
+
+document.querySelector("h1").innerText = "BIM BUM BAM"
