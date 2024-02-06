@@ -29,7 +29,10 @@ function isPalindrome(parola) {
 
 // Verifica se la parola inserita è palindroma in console
 if (isPalindrome(userInput)) {
+    document.getElementById("result").innerHTML = "Hai inserito la parola: " + userInput +  "<br>La parola inserita è palindroma!";
     console.log("La parola inserita è palindroma.");
 } else {
+    document.getElementById("result").innerHTML = "Hai inserito la parola: " + userInput +  "<br>La parola inserita NON è palindroma!";;
     console.log("La parola inserita non è palindroma.");
 }
+document.querySelector("h1").innerText = "PAROLE PALINDROME";
